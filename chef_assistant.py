@@ -1,12 +1,12 @@
-# from dotenv import load_dotenv
-# import os
-# load_dotenv()
-# api_key = os.getenv("GROQ_API_KEY")
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key = os.getenv("GROQ_API_KEY")
 
 from groq import Groq
 import streamlit as st
 
-api_key = st.secrets["GROQ_API_KEY"]
+# api_key = st.secrets["GROQ_API_KEY"]
 
 # ── Page config ────────────────────────────────────────────────────────────────
 st.set_page_config(
