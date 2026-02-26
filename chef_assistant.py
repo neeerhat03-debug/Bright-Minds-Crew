@@ -7,7 +7,7 @@ import os
 from groq import Groq
 import streamlit as st
 
-api_key = st.secrets.get("GROQ_API_KEY")
+api_key = st.secrets["GROQ_API_KEY"]
 
 # ── Page config ────────────────────────────────────────────────────────────────
 st.set_page_config(
